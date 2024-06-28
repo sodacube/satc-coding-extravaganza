@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Styled Button</title>
+    <style>
+button {
+    /* Layout and Box Model */
+    display: block;
+    position: fixed;
+    bottom: 10px; left: 10px;
+    width: 80%;
+    height: 60px;
+    margin: 5px;
+    padding: 15px;
+    border: 3px dashed #666;
+    border-radius: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    visibility: visible;
+    z-index: 100;
+
+    /* Typography */
+    color: #000000;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: right;
+    text-decoration: underline;
+    text-transform: lowercase;
+    text-shadow: 2px 2px 3px grey;
+    white-space: pre-line;
+
+    /* Background */
+    background-color: #FF5733;
+    background-image: linear-gradient(to top right, #FF5733, #FFC300);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: auto;
+    background-origin: border-box;
+    background-clip: content-box;
+    background-attachment: fixed;
+
+    /* Flexbox */
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    flex-flow: column wrap;
+    align-content: space-around;
+    order: 1;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    align-self: stretch;
+
+    /* Effects */
+    opacity: 0.9;
+    filter: drop-shadow(2px 2px 2px black) brightness(0.9) contrast(120%);
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(5px);
+
+    /* Transitions and Animations */
+    transition: all 0.5s ease-in-out;
+    animation: spin-button 10s infinite linear;
+
+    /* Interaction */
+    cursor: grab;
+    resize: both;
+    scroll-behavior: smooth;
+    pointer-events: none;
+    user-select: text;
+
+    /* Accessibility and Forms */
+    outline: 1px solid black;
+    outline-offset: 5px;
+}
+
+/* Simple spin animation */
+@keyframes spin-button {
+    from { transform: scale(1) rotate(0deg); }
+    to { transform: scale(1.5) rotate(360deg); }
+}
+
+/* Hover effect */
+button:hover {
+    background-image: linear-gradient(to bottom left, #FFC300, #FF5733);
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.9);
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    button {
+        width: 300px;
+        height: 100px;
+        font-size: 24px;
+        background-color: #333;
+        background-image: linear-gradient(to bottom, #333, #000);
+        color: #FFF;
+        border: none;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 20px;
+        text-shadow: 3px 3px 4px black;
+        box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(8px);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <button>Click Me</button>
+</body>
+</html>

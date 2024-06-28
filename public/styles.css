@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+#content {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+#imageTextContainer {
+    margin-top: 20px;
+}
+
+.imageTextItem {
+    margin-bottom: 20px;
+}
+
+.imageTextItem img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.imageTextItem p {
+    font-size: 1.2em;
+}
+
+/* General styling for each content block */
+.content-block {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+/* Styling for the images */
+.dynamic-image {
+    width: 150px; /* Set a fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Styling for the text */
+.dynamic-text {
+    font-size: 1.2em; /* Larger text size */
+    color: #333; /* Dark grey text color */
+    flex: 1; /* Allows text to fill the remaining space */
+    padding: 0 10px;
+}
+
+/* Styling for the text container */
+.text-container {
+    flex: 1; /* Take up the remaining space in the content block */
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    justify-content: center; /* Center the content vertically */
+}
+
+/* Additional descriptive text */
+.additional-text {
+    color: #666; /* Slightly lighter grey than the main text */
+    margin-top: 10px; /* Space between main text and this paragraph */
+    font-size: 0.9em; /* Smaller font size than the main text */
+}
+
+/* Styling for the CTA button */
+.cta-button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Bootstrap primary blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px; /* Space above the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover for better interaction */
+}
